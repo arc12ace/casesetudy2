@@ -1,0 +1,92 @@
+<html> 
+    <head>
+        <title>Case Study 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      <body> 
+          <center>
+              <h1> Google Lens vs MobileNet</h1>
+            <br>
+              <div class="main_div">
+                <center>
+                    <label> Test Image 1: </label>
+                    <br>
+                    <img class="test_image" src="https://i5.walmartimages.com/asr/b9766b8a-b54d-48a3-9cc4-e8f87bfa4273_1.664cdfa8da3a68d0a34e16160542fda5.jpeg"> 
+                    <h3> Output on Google Lens:
+                    <span id="lens1"> Roku remote control </span>    
+                    </h3>
+                    <h3> Output on MobileNet:
+                    <span id="mobilenet1"> remote control, remote </span>
+                    </h3>
+                </center>      
+            </div>
+            <br> 
+            <div class="main_div">
+              <center>
+                  <label> Test Image 2: </label>
+                  <br>
+                  <img class="test_image" src="https://th.bing.com/th/id/R.d02df1cf05cad774a0c9a6bd48e71a88?rik=%2b3gT1G3%2fKAZ1TA&pid=ImgRaw"> 
+                  <h3> Output on Google Lens:
+                  <span id="lens2"> pillows </span>    
+                  </h3>
+                  <h3> Output on MobileNet:
+                  <span id="mobilenet2"> comforter, day bed, quilt  </span>
+                  </h3>
+              </center>      
+          </div>
+          <br>
+          <div class="main_div">
+            <center>
+                <label> Test Image 3: </label>
+                <br>
+                <img class="test_image" src="https://media.musicstorelive.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/a/samsn-r21s_1.jpg"> 
+                <h3> Output on Google Lens:
+                <span id="lens3"> microphone </span>    
+                </h3>
+                <h3> Output on MobileNet:
+                <span id="mobilenet3"> microphone, mike </span>
+                </h3>
+            </center>      
+        </div>
+        <br>
+        <div class="main_div">
+          <center>
+              <label> Test Image 4: </label>
+              <br>
+              <img class="test_image" src="https://th.bing.com/th/id/R.155638805598a7b0db5fc1b467c7605c?rik=UA9mhZyY3Mk1TQ&pid=ImgRaw"> 
+              <h3> Output on Google Lens:
+              <span id="lens4"> Ticondergoa pencil </span>    
+              </h3>
+              <h3> Output on MobileNet:
+              <span id="mobilenet4"> syringe, ballpoint pen, refrigerator </span>
+              </h3>
+          </center>      
+      </div>
+      <br>
+      <div class="main_div">
+        <center>
+            <label> Test Image 5: </label>
+            <br>
+            <img class="test_image" src="https://th.bing.com/th/id/R.03c7b778c5d4b6b24c01a3b944d93158?rik=gW4x934lZVc0wA&pid=ImgRaw"> 
+            <h3> Output on Google Lens:
+            <span id="lens5"> water bottle </span>    
+            </h3>
+            <h3> Output on MobileNet
+            <span id="mobilenet5"> water bottle, lighter, soap dispenser </span>
+            </h3>
+        </center>      
+    </div>
+    <h1 id="final_output">  </h1>
+          </center>
+      </body>
+      </html>
